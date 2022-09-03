@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        nav{
+            background-color:#ad31fb;
+        }
+       .dateofdatee{
+        height:700px;
+        width: 80vw;
+       box-shadow: 0 0 4px blueviolet;
+        margin:30px auto;
+        border-radius: 5px;
+        padding: 30px;
+        text-align: center;
+       }
+       h4{
+        text-align: center;
+        text-shadow: 0 0 10px blueviolet;
+        color: rgb(118, 22, 207);
+       }
+       .dateofdatee .box{
+        height: 200px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin:30px;
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+        align-items: center;
+       }
+       .dateofdatee .box .dateof{
+        height: 60px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 0 4px rgb(157, 85, 225);
+        border: 1px solid white;
+        padding: 20px;
+        margin: 10px auto;
+       }
+       .btn-primary{
+            height:40px;
+            background-color:transparent;
+            width: 100px;
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            border-radius: 4px;
+            margin: 40px;
+            transition: all .5s ease;
+            
+        }
+        .dayt{
+          height: 70px;
+          width: 200px;
+          box-shadow: 0 0 4px rgb(157, 85, 225);
+          margin: 10px auto;
+          border-radius: 5px;
+          padding: 18px;
+          text-align: center;
+          display: none;
+          
+          
+        }
+        .dayt h3{
+          text-shadow: 0 0 15px rgb(71, 7, 131);
+          color: white;
+          text-align: center;
+        }
+        footer{
+            height: 70px;
+            background-color: rgb(214, 182, 244);
+            color: white;
+            text-align: center;
+        }
+        #onemore{
+          display: none;
+          text-align: center;
+        }
+         
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#" style="color:white;">Gaming</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="guess.html" style="color:rgba(214, 211, 211, 0.87) ;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="DayofDate.html" style="color:rgba(255, 248, 248, 1) ;">DayofDate<span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchtxt" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+        <div class="dateofdatee" >
+            <h4>WelCome to DayOfDate</h4>
+            <div class="box">
+                <input type="number" name="" id="date" class="dateof"  placeholder="Enter date here">
+                <input type="number" name="" id="month" class="dateof"  placeholder="Enter month here">
+                <input type="number" name="" id="year" class="dateof"  placeholder="Enter year here">
+            </div>
+            <button type="submit" id="addbtn" class="btn-primary" >Get Day</button>
+
+            <div class="dayt">
+                  
+            </div><a href="DayofDate.html" id="onemore" >  <button type="submit" class="btn-primary"  style="width:150px;">one more</button ></a>
+        </div>
+        <footer><p>&copy; Copywrite </p> <p>Praveen kumar G ,ISE UVCE</p></footer>
+     
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="DayofDate.js"></script>
+</html>

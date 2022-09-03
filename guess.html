@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        nav{
+            background-color: blueviolet;
+        }
+        .container{
+            min-height: 600px;
+            width: 80vw;
+            margin: auto;
+            box-shadow: 0 0 3px #8a2be2;
+            border-radius: 4px;
+            text-align: center;
+            transition: all .6s ease;
+            padding: 20px;
+        }
+        .container h1{
+             text-align: center;
+             text-shadow: 0 0 5px blueviolet;
+             color: blue;
+        }
+        .container h4{
+            text-shadow: 0 0 8px rgb(255, 57, 47);
+            color: orange;
+        }
+        .txt{
+            margin-top: 50px;
+        }
+        .txt .number{
+            height: 60px;
+            width: 300px;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: all .8s ease;
+        }
+        .txt .number:hover{
+            box-shadow: 0 0 15px blueviolet;
+        }
+        .btn-primary{
+            height:40px;
+            background-color:transparent;
+            width: 100px;
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            border-radius: 4px;
+            margin: 40px;
+            transition: all .5s ease;
+            
+        }
+        .some{
+            /* height: 100px; */
+            padding: 10px;
+            width: 50%;
+            box-shadow: 0 0 10px blueviolet;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            display: none;
+            border-radius:5px;
+            border: 2px solid blueviolet;
+        }
+        h3{
+           text-shadow: 0 0 15px rgb(32, 20, 44);
+           color: rgb(255, 42, 244);
+            
+        }
+        .container:hover{
+            box-shadow: 0 0 15px blueviolet;
+        }
+        footer{
+            height: 70px;
+            background-color: rgb(214, 182, 244);
+            color: white;
+            text-align: center;
+        }
+        @media  screen and (max-width:400px){
+            .txt .number{
+                width:90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#" style="color:white;">Gaming</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color:rgb(255, 255, 255) ;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="DayofDate.html" style="color:rgba(226, 223, 223, 0.839) ;">DayofDate<span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchtxt" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container my-3">
+            <h1>Guess the Integer between 1 to 1000</h1> <hr>
+            <h4 style="margin-top:20px;">Enter number here</h4>
+        <div class="txt">
+           <input type="number" name="value" id="number" class="number" placeholder="enter you guess number">
+        </div>
+        <button type="submit" class="btn-primary" id="addbtn" >Check</button>
+
+        <div class="some" id="some"></div>
+        <a href="guess.html"><button type="submit" id="take" class="btn-primary" style="width:150px ;display: none;margin-top: 40px;">Take another</button></a>
+      </div>
+
+      <footer><p>&copy; Copywrite </p> <p>Praveen kumar G ,ISE UVCE</p></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="guess.js"></script>
+</html>
